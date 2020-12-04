@@ -12,9 +12,6 @@ pipeline {
        stage ("post steps") {
               steps {
                   sh 'docker build -t valaxy_demo . '
-                  sh ' docker tag valaxy_demo valaxy/valaxy_demo '
-                  sh ' docker push valaxy/valaxy_demo '
-                  sh ' docker rmi valaxy_demo valaxy/valaxy_demo '
                  }
         }
   }
