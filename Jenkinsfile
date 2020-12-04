@@ -9,7 +9,7 @@ pipeline {
                sh "mvn install"
                sh "mvn package"
                  }
-       stage ("post steps") {
+      stage ("post steps") {
               steps {
                   sh 'docker build -t valaxy_demo . '
                  }
